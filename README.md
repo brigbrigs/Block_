@@ -34,7 +34,7 @@ Key Components:
 
 Midterm questions
 • How long (cumulative) have you spent on the code?
-  I spent most of my time trying to figure out how to use Renpy, it took me about a week of working with it before I had to change my strategy. Watching videos and looking at workarounds within Renpy took me around 10 hours during a week until I gave up. The rest of the code took me some time as any time I tried to use ChatGPT it would not produce what I wanted. In total, I took around 20 hours, about 3 or 4 a week on average to finish the project.
+  I spent most of my time trying to figure out how to use Renpy, it took me about a week of working with it before I had to change my strategy. Watching videos and looking at workarounds within Renpy took me around 10 hours a week until I gave up. The rest of the code took me some time as any time I tried to use ChatGPT it would not produce what I wanted. In total, I took around 20 hours, about 3 or 4 a week on average to finish the project.
 • What was the most time-consuming part?
   It was definitely trying to figure out Renpy, but after that, I think I spent most of my time trying to figure out how to get the blocks to move and then get them to move in the right direction. I had blocks at first that were square and not rectangular so anytime I tried to get them to move they wouldn't go anywhere and fixing them caused the rest of the blocks to be unable to move. Limiting the amount of constraints on the blocks was really difficult as I was told during one of my checkpoints to try to shorten my code to make it less complicated.
 • In retrospect, how could you have worked more efficiently?
