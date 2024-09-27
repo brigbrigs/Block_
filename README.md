@@ -1,5 +1,3 @@
-Please look at his like you would code it looks weird if not.
-
 This code creates a sliding block puzzle game using Pygame. The objective is to move a red "target" block horizontally to the exit on the right side of the grid. Each block can only move in one direction (horizontal or vertical), and they cannot overlap with other blocks. The game progresses through multiple levels with different block arrangements. The user interacts with the blocks by clicking on them and using arrow keys to move them. If the target block reaches the exit, the game moves to the next level. The game is finished when the third level is completed and the user is given a congratulations.
 
 For a more in-depth look: 
