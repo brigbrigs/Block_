@@ -1,3 +1,5 @@
+Please look at his like you would code it looks weird if not.
+
 This code creates a sliding block puzzle game using Pygame. The objective is to move a red "target" block horizontally to the exit on the right side of the grid. Each block can only move in one direction (horizontal or vertical), and they cannot overlap with other blocks. The game progresses through multiple levels with different block arrangements. The user interacts with the blocks by clicking on them and using arrow keys to move them. If the target block reaches the exit, the game moves to the next level. The game is finished when the third level is completed and the user is given a congratulations.
 
 For a more in-depth look: 
@@ -28,3 +30,14 @@ Key Components:
     Potential Expansions: 
       More levels could be added by extending the create_level() function.
       Additional features like a move counter, time tracking, or undo functionality could enhance gameplay.
+
+
+Midterm questions
+• How long (cumulative) have you spent on the code?
+  I spent most of my time trying to figure out how to use Renpy, it took me about a week of working with it before I had to change my strategy. Watching videos and looking at workarounds within Renpy took me around 10 hours during a week until I gave up. The rest of the code took me some time as any time I tried to use ChatGPT it would not produce what I wanted. In total, I took around 20 hours, about 3 or 4 a week on average to finish the project.
+• What was the most time consuming part?
+  It was definitely trying to figure out Renpy, but after that I think I spent most of my time trying to figure out how to get the blocks to move and then get them to move in the right direction. I had blocks at first that were square and not rectangular so anytime I tried to get them to move they wouldn't go anywhere and fixing them caused the rest of the blocks to be unable to move. Limiting the amount of constraints on the blocks was really difficult as I was told during one of my checkpoints to try to shorten my code to make it less complicated.
+• In retrospect, how could you have worked more efficiently?
+I think limiting the amount of things I wanted to add would have made me much more efficient. I kept trying to include everything that I first envisioned that I was lacking on the base of the code to get it to run. Knowing more about how !!!!!!!
+• What libraries/starter code were most useful? To what extent did you need to modify them?
+  There was a YouTube video of a different puzzle game that I watched a lot to understand how puzzle games were created. (https://www.youtube.com/watch?v=xpcuAWcEUnM&ab_channel=Tech%26Gaming) Looking at this video helped me create boundaries for my game. It is a very different type of code but the basics of moving blocks in a puzzle really helped me visualize my code better.
