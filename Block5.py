@@ -55,16 +55,16 @@ def create_level(level_num):
         return [
             Block(0, 2, 2, 1, TARGET_COLOR, is_target=True),  # Target block
             Block(3, 0, 3, 1, BLOCK_COLOR),  # Horizontal block
-            Block(1, 4, 1, 2, BLOCK_COLOR),  # Vertical block
+            Block(3, 2, 1, 2, BLOCK_COLOR),  # Vertical block
             Block(4, 1, 1, 3, BLOCK_COLOR),  # Vertical block
         ]
     elif level_num == 2:
         return [
             Block(0, 2, 2, 1, TARGET_COLOR, is_target=True),  # Target block
-            Block(0, 0, 2, 1, BLOCK_COLOR),  # Horizontal block
+            Block(1, 0, 2, 1, BLOCK_COLOR),  # Horizontal block
             Block(2, 1, 1, 2, BLOCK_COLOR),  # Vertical block
             Block(3, 3, 2, 1, BLOCK_COLOR),  # Horizontal block
-            Block(0, 5, 3, 1, BLOCK_COLOR),  # Horizontal block
+            Block(0, 4, 3, 1, BLOCK_COLOR),  # Horizontal block
         ]
     elif level_num == 3:
         return [
