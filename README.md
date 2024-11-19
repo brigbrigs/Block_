@@ -28,14 +28,3 @@ Key Components:
     Potential Expansions: 
       More levels could be added by extending the create_level() function.
       Additional features like a move counter, time tracking, or undo functionality could enhance gameplay.
-
-
-Midterm questions
-• How long (cumulative) have you spent on the code?
-  I spent most of my time trying to figure out how to use Renpy, it took me about a week of working with it before I had to change my strategy. Watching videos and looking at workarounds within Renpy took me around 10 hours a week until I gave up. The rest of the code took me some time as any time I tried to use ChatGPT it would not produce what I wanted. In total, I took around 20 hours, about 3 or 4 a week on average to finish the project.
-• What was the most time-consuming part?
-  It was definitely trying to figure out Renpy, but after that, I think I spent most of my time trying to figure out how to get the blocks to move and then get them to move in the right direction. I had blocks at first that were square and not rectangular so anytime I tried to get them to move they wouldn't go anywhere and fixing them caused the rest of the blocks to be unable to move. Limiting the amount of constraints on the blocks was really difficult as I was told during one of my checkpoints to try to shorten my code to make it less complicated.
-• In retrospect, how could you have worked more efficiently?
-  I think limiting the amount of things I wanted to add would have made me much more efficient. I kept trying to include everything that I first envisioned that I was lacking on the base of the code to get it to run. I think going for shorter or more simple code would have helped me as well. For every new addition I added to the code caused the code to increase significantly and that made it made me work harder and not smarter.
-• What libraries/starter codes were most useful? To what extent did you need to modify them?
-  There was a YouTube video of a different puzzle game that I watched a lot to understand how puzzle games were created. (https://www.youtube.com/watch?v=xpcuAWcEUnM&ab_channel=Tech%26Gaming) Looking at this video helped me create boundaries for my game. It is a very different type of code but the basics of moving blocks in a puzzle really helped me visualize my code better.
