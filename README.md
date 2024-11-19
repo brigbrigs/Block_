@@ -28,3 +28,7 @@ Key Components:
     Potential Expansions: 
       More levels could be added by extending the create_level() function.
       Additional features like a move counter, time tracking, or undo functionality could enhance gameplay.
+
+
+New Updates!!
+I have added random levels after level 3 however they are sometimes impossible so I am still working on that, I have also started to create more levels that are more complex just in case the random levels don't work out. I know my code also lacks some explanations however, I am changing it in large chunks at a time and it was costing me a lot of time to type out everything so I have a word document that listens to the basics of what all my coed does so I can write it out better for whe I submit my final project. 
