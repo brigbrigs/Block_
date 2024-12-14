@@ -1,0 +1,86 @@
+# Ensure the following are defined before running the test script:
+# - The `Block` class with methods like `move` and required attributes.
+# - Constants for colors: `TARGET_COLOR`, `BLOCK_COLOR`, `LOCKED_COLOR`.
+
+# Example color definitions if not already present:
+TARGET_COLOR = (255, 60, 60)  # Red for the target block
+BLOCK_COLOR = (60, 60, 255)   # Blue for normal blocks
+LOCKED_COLOR = (100, 100, 100)  # Grey for locked blocks
+
+def test_unblock_me():
+    """
+    Test suite for validating the functionality of the 'Unblock Me' game logic.
+    """
+
+    # Helper function to print the board state
+    def print_board(board):
+        print("Current Board State:")
+        for block in board:
+            print(f"{'T' if block.is_target else 'L' if block.is_locked else 'B'} Block at ({block.x}, {block.y}) "
+                  f"Size ({block.width}x{block.height}), {'Horizontal' if block.is_horizontal else 'Vertical'}")
+
+    # Test 1: Ensure no locked block is selected during cycling
+    board = [
+        Block(0, 0, 2, 1, TARGET_COLOR, is_target=True),  # Target block
+        Block(2, 0, 2, 1, BLOCK_COLOR),  # Normal block
+        Block(4, 0, 1, 1, LOCKED_COLOR, is_locked=True),  # Locked block (1x1)
+        Block(5, 0, 2, 1, BLOCK_COLOR),  # Normal block
+    ]
+    selected_index = 0
+    selected_block = board[selected_index]
+
+    # Cycle through blocks
+    for _ in range(len(board) * 2):  # Twice to ensure proper cycling
+        selected_index = (selected_index + 1) % len(board)
+        selected_block = board[selected_index]
+        if selected_block.is_locked and selected_block.width == 1 and selected_block.height == 1:
+            print("ERROR: Locked 1x1 block selected during cycling!")
+            return False
+    print("Test 1 Passed: No locked blocks selected during cycling.")
+
+    # Test 2: Target block movement
+    target_block = board[0]
+    board_without_target = board[1:]
+    if target_block.move(1, 0, board_without_target):
+        print("Test 2 Passed: Target block moved successfully.")
+    else:
+        print("ERROR: Target block movement failed!")
+        return False
+
+    # Test 3: Locked block immobility
+    locked_block = board[2]
+    if not locked_block.move(1, 0, board):
+        print("Test 3 Passed: Locked block did not move.")
+    else:
+        print("ERROR: Locked block moved!")
+        return False
+
+    # Test 4: Horizontal and vertical movement constraints
+    horizontal_block = board[1]
+    if not horizontal_block.move(0, 1, board):
+        print("Test 4 Passed: Horizontal block did not move vertically.")
+    else:
+        print("ERROR: Horizontal block moved vertically!")
+        return False
+
+    vertical_block = Block(2, 1, 1, 2, BLOCK_COLOR)  # Vertical block
+    if not vertical_block.move(1, 0, board):
+        print("Test 4 Passed: Vertical block did not move horizontally.")
+    else:
+        print("ERROR: Vertical block moved horizontally!")
+        return False
+
+    # Test 5: Collision avoidance
+    if not target_block.move(1, 0, board):
+        print("Test 5 Passed: Collision detected, target block did not move into another block.")
+    else:
+        print("ERROR: Target block moved into another block!")
+        return False
+
+    print("All tests passed!")
+    return True
+
+
+if __name__ == "__main__":
+    # Run the test suite
+    test_unblock_me()
